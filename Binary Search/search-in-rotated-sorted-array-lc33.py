@@ -1,5 +1,8 @@
+# page 34
 
 from typing import List
+
+
 class Solution:
 
     def search(self, nums: List[int], target: int) -> int:
@@ -43,9 +46,3 @@ class Solution:
                 h = mid - 1
 
         return -1
-
-
-
-
-
-
