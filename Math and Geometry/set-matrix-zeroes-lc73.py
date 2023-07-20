@@ -28,11 +28,11 @@ class Solution:
                     matrix[r][c] = 0  # set the element to zero
 
         if matrix[0][0] == 0:  # if the first element of the matrix is zero
-            for r in range(m):  # set all the elements of the first row to zero
+            for r in range(m):  # set all the elements of the first column to zero
                 matrix[r][0] = 0
 
         if rowZero:  # if the first row had any zero
-            for c in range(n):  # set all the elements of the first column to zero
+            for c in range(n):  # set all the elements of the first row to zero
                 matrix[0][c] = 0
 
 
