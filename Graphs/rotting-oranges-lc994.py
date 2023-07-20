@@ -1,5 +1,6 @@
 # page 94
 from typing import List
+from collections import deque
 
 
 class Solution:
