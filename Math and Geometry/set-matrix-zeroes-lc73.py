@@ -9,6 +9,12 @@ class Solution:
         Do not return anything, modify matrix in-place instead.
         """
 
+        # The main idea is to use the first row and first column as the markers to check if a row or column has any zero
+        # If any element is zero, set the first element of that row and column to zero
+        # Re-iterate over the matrix [1:][1:] & set the cells to zero if the first cell of that row or column is zero
+        # Finally, check if the first row has any zero, if so, set the entire row to zero
+        # Also, Check if the first column has any zero, if so, set the entire column to zero
+
         m, n = len(matrix), len(matrix[0])
         rowZero = False  # to check if the first row has any zero
 
