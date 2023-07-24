@@ -21,7 +21,7 @@ class Codec:
 
         def dfs(node):
             if not node:
-                self.serialized.append('#')
+                self.serialized.append('#') # to identify leaf nodes
                 return
 
             self.serialized.append(str(node.val))
